@@ -12,6 +12,8 @@ function validatePhone(value) {
 function checkEmail(element) {
 	element.style.borderColor = "black";
 	document.getElementById(element.id+"_error").style.display = "none";
+	
+	if(element.value == "") { return true; }
 	if(!validateEmail(element.value)) {
 		element.style.borderColor = "#d55b71";
 		document.getElementById(element.id+"_error").style.display = "block";
@@ -25,6 +27,7 @@ function checkPhone(element) {
 	element.style.borderColor = "black";
 	document.getElementById(element.id+"_error").style.display = "none";
 	
+	if(element.value == "") { return true; }
 	if(!validatePhone(element.value)) {
 		element.style.borderColor = "#d55b71";
 		document.getElementById(element.id+"_error").style.display = "block";
