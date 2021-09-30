@@ -5,14 +5,14 @@
 		<meta charset="UTF-8">
 		
 		<!-- Set page title -->
-		<title>Justin Hamilton</title>
+		<title>Contact - Justin Hamilton</title>
 		
 		<!-- Link the CSS to the page -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		
 		<!-- Link the JavaScript to the page -->
-		<script type="text/javascript" src="js/scripts.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 	</head>
 	
 	<body onload="loaded()">
@@ -48,35 +48,35 @@
 		<div id="content">
 			<div id="formContainer">
 				<form id="contact_form">
-				<p "user_fname">First Name<span class="requiredEmphasis">*</span></p><br />
-				<input class="contactInput" type="text" name="user_fname" id="user_fname" placeholder="First Name">
-				<p class="errorMessage" id="user_fname_error" style="display:none;">Please enter your first name.</p>
-				<br />
-				
-				<p>Last Name<span class="requiredEmphasis">*</span></p><br />
-				<input class="contactInput" type="text" name="user_lname" id="user_lname" placeholder="Last Name">
-				<p class="errorMessage" id="user_lname_error" style="display:none;">Please enter your last name.</p>
-				<br />
-				
-				<p "user_email">Email</p><br />
-				<input class="contactInput" type="text" name="user_email" id="user_email" placeholder="Enter Email">
-				<p class="errorMessage" id="user_email_error" style="display:none;">Please enter a valid email.</p>
-				<br />
-				
-				<p "user_phone">Phone</p><br />
-				<input class="contactInput" type="text" name="user_phone" id="user_phone" placeholder="Enter Phone">
-				<p class="errorMessage" id="user_phone_error" style="display:none;">Please enter a valid phone number.</p>
-				<br />
-				
-				<p="user_message">Message<span class="requiredEmphasis">*</span></p><br />
-				<textarea class="contactInput" name="user_message" id="user_message" placeholder="Enter Message"></textarea>
-				<p class="errorMessage" id="user_message_error" style="display:none;">Please enter a message.</p>
-				
-				<p class="requiredEmphasis">* Required</p>
-				
-				<input type="submit" id="submitContactButton" value="Submit">
-				<p class="errorMessage" id="submitContactButton_error" style="display:none;">Error message.</p>
-				<br />
+					<p>First Name<span class="requiredEmphasis">*</span></p><br />
+					<input class="contactInput" type="text" name="user_fname" id="user_fname" placeholder="First Name">
+					<p class="errorMessage" id="user_fname_error" style="display:none;">Please enter your first name.</p>
+					<br />
+					
+					<p>Last Name<span class="requiredEmphasis">*</span></p><br />
+					<input class="contactInput" type="text" name="user_lname" id="user_lname" placeholder="Last Name">
+					<p class="errorMessage" id="user_lname_error" style="display:none;">Please enter your last name.</p>
+					<br />
+					
+					<p>Email</p><br />
+					<input class="contactInput" type="text" name="user_email" id="user_email" placeholder="Enter Email">
+					<p class="errorMessage" id="user_email_error" style="display:none;">Please enter a valid email.</p>
+					<br />
+					
+					<p>Phone</p><br />
+					<input class="contactInput" type="text" name="user_phone" id="user_phone" placeholder="Enter Phone">
+					<p class="errorMessage" id="user_phone_error" style="display:none;">Please enter a valid phone number.</p>
+					<br />
+					
+					<p>Message<span class="requiredEmphasis">*</span></p><br />
+					<textarea class="contactInput" name="user_message" id="user_message" placeholder="Enter Message"></textarea>
+					<p class="errorMessage" id="user_message_error" style="display:none;">Please enter a message.</p>
+					
+					<p class="requiredEmphasis">* Required</p>
+					
+					<input type="submit" id="submitContactButton" value="Submit">
+					<p class="errorMessage" id="submitContactButton_error" style="display:none;">Error message.</p>
+					<br />
 				</form>
 			</div>
 		</div>
