@@ -18,6 +18,12 @@ body {
 	display:inline-block;
 }
 
+#topContent {
+	margin-top:10px;
+	display:flex;
+	justify-content:center;
+}
+
 #textContent {
 	margin-left:10px;
 }
@@ -40,6 +46,55 @@ body {
 
 a {
 	color: #d55b71;
+}
+
+a:hover {
+	color: #85d3dc;
+}
+
+#formContainer {
+	width:100%;
+	max-width:750px;
+}
+
+.contactInput {
+	margin-top:-20px;
+	padding:10px;
+	background-color:white;
+	border:2px solid #323232;
+}
+
+#user_message {
+	min-height: 250px;
+	width:100%;
+}
+
+#submitContactButton {
+	height:50px;
+	width:100%;
+	background-color:white;
+	border:2px solid #323232;
+	cursor:pointer;
+}
+
+#submitContactButton:hover {
+	background-color: #323232;
+	color:white;
+	border:2px solid white;
+}
+
+#contact_form {
+	display:flex;
+	flex-direction:column;
+}
+
+.requiredEmphasis {
+	color:#d55b71;
+}
+
+.errorMessage {
+	color: #d55b71;
+	font-size:0.8em;
 }
 
 @media (prefers-color-scheme: dark) {

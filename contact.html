@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Set the charset -->
+		<meta charset="UTF-8">
+		
+		<!-- Set page title -->
+		<title>Justin Hamilton</title>
+		
+		<!-- Link the CSS to the page -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<!-- Link the JavaScript to the page -->
+		<script type="text/javascript" src="js/scripts.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+	</head>
+	
+	<body onload="loaded()">
+		<!-- Header with name, image, navigation -->
+		<div id="header">
+			<div id="topContent">
+				<!-- my profile -->
+				<img id="profile" alt="A picture of me" src="images/profile.png">
+				
+				<!-- Containing the text content inline with the image -->
+				<div id="textContent">
+					<!-- My Name / Opening h1 -->
+					<h1>Justin Hamilton</h1>
+					<!--
+						Justin Hamilton
+						CISC474-010
+						Personal Web Page 1
+						justinwh@udel.edu
+					-->
+				</div>
+			</div>
+			<!-- Inline navigation menu -->
+			<p id="navigation">
+				<a href="https://desdaile.github.io/">Previous</a> / 
+				<a href="/">Home</a> / 
+				<a href="/aboutme.html">About Me</a> / 
+				<a href="https://mattm401.github.io/">Class Website</a> / 
+				Contact / 
+				<a href="https://noahhodgson.github.io/474GithubPage/">Next</a></p>
+		</div>
+		
+		<!-- Houses the text body of the page -->
+		<div id="content">
+			<div id="formContainer">
+				<form id="contact_form">
+				<p "user_fname">First Name<span class="requiredEmphasis">*</span></p><br />
+				<input class="contactInput" type="text" name="user_fname" id="user_fname" placeholder="First Name">
+				<p class="errorMessage" id="user_fname_error" style="display:none;">Please enter your first name.</p>
+				<br />
+				
+				<p>Last Name<span class="requiredEmphasis">*</span></p><br />
+				<input class="contactInput" type="text" name="user_lname" id="user_lname" placeholder="Last Name">
+				<p class="errorMessage" id="user_lname_error" style="display:none;">Please enter your last name.</p>
+				<br />
+				
+				<p "user_email">Email</p><br />
+				<input class="contactInput" type="text" name="user_email" id="user_email" placeholder="Enter Email">
+				<p class="errorMessage" id="user_email_error" style="display:none;">Please enter a valid email.</p>
+				<br />
+				
+				<p "user_phone">Phone</p><br />
+				<input class="contactInput" type="text" name="user_phone" id="user_phone" placeholder="Enter Phone">
+				<p class="errorMessage" id="user_phone_error" style="display:none;">Please enter a valid phone number.</p>
+				<br />
+				
+				<p="user_message">Message<span class="requiredEmphasis">*</span></p><br />
+				<textarea class="contactInput" name="user_message" id="user_message" placeholder="Enter Message"></textarea>
+				<p class="errorMessage" id="user_message_error" style="display:none;">Please enter a message.</p>
+				
+				<p class="requiredEmphasis">* Required</p>
+				
+				<input type="submit" id="submitContactButton" value="Submit">
+				<p class="errorMessage" id="submitContactButton_error" style="display:none;">Error message.</p>
+				<br />
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
