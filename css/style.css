@@ -13,94 +13,12 @@ body {
 	padding:10px;
 }
 
-#studentNavigation {
-	text-align:center;
-}
-
 a {
 	color: #d55b71;
 }
 
 a:hover {
 	color: #85d3dc;
-}
-
-#navButton {
-	position:fixed;
-	right:25px;
-	bottom:25px;
-	width:75px;
-	height:75px;
-	background-color:#323232;
-	color:#fffff7;
-	border-radius:25px;
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	cursor:pointer;
-	box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.50);
-	z-index:10;
-}
-
-#navButton:hover {
-	background-color:#d55b71;
-	box-shadow: 0px 0px 25px -4px rgb(213, 91, 113, 0.5);
-	
-}
-
-#navButtonPlus {
-	font-size:75px;
-	user-select:none;
-}
-
-#prevNextContainer {
-	display:flex;
-	flex-direction:row;
-	justify-content:space-around;
-}
-
-.webringNav {
-	text-decoration:none;
-	font-size:30px;
-}
-
-#navPopup {
-	position:fixed;
-	right:25px;
-	bottom:25px;
-	background-color: #fffff7;
-	padding:10px;
-	display:none;
-	flex-direction:column;
-	color: #323232;
-	border-radius:25px;
-	text-align:right;
-	overflow:hidden;
-	white-space:nowrap;
-	opacity:0;
-	z-index:11;
-}
-
-.navPopupItem {
-	padding:10px;
-	user-select:none;
-}
-
-#clickChecker {
-	background-color:black;
-	position:fixed;
-	bottom:0;
-	top:0;
-	right:0;
-	left:0;
-	z-index:1;
-	opacity:0;
-	display:none;
-}
-
-#closeMenuButton {
-	text-decoration:underline;
-	cursor:pointer;
 }
 
 ul {
@@ -128,11 +46,6 @@ li:before {
 		background-color:#323232;
 		color: #fffff7;
 	}
-	
-	#navButton {
-		background-color: #fffff7;
-		color: #323232;	
-	}
 }
 
 @media screen and (orientation:portrait) {
@@ -146,23 +59,6 @@ li:before {
 		margin-right:3vw;
 	}
 	
-	
-	#navButton {
-		width:10vh;
-		height: 10vh;
-		border-radius: 3.33vh;
-		right: 25px;
-		bottom:25px;
-	}
-	
-	#navButtonPlus {
-		font-size:10vh;
-	}
-	
-	#navPopup {
-		border-radius: 3.33vh;
-	}
-	
 	.sectionContainer {
 		flex-direction:column;
 		justify-content:center;
@@ -172,10 +68,5 @@ li:before {
 	.section {
 		width:50vw;
 		
-	}
-	
-	.navPopupItem {
-		font-size:4vh;
-		padding: 2vh;
 	}
 }
