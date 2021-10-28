@@ -160,6 +160,7 @@ function resizeMenuAndButton(e) {
 	let button = document.getElementById("navButton");
 	let menu = document.getElementById("navPopup");
 	let plus = document.getElementById("navButtonPlus");
+	button.style.backgroundColor = "blue";
 	
 	if(e.matches) {
 		menu.style.width = "fit-content";
