@@ -257,6 +257,10 @@ li:before {
 		font-size:4vw;
 	}
 	
+	#content {
+		max-width:none;
+	}
+	
 	#profile {
 		width: 20vw;
 		height: 20vw;
@@ -270,22 +274,22 @@ li:before {
 	
 	#footer {
 		flex-direction:row;
-		padding-bottom:calc(15vh + 35px);
+		padding-bottom:calc(10vh + 35px);
 	}
 	
 	
 	#navButton {
-		width:15vh;
-		height: 15vh;
-		border-radius: 5vh;
+		width:10vh;
+		height: 10vh;
+		border-radius: 2.5vh;
 	}
 	
 	#navButtonPlus {
-		font-size:15vh;
+		font-size:10vh;
 	}
 	
 	#navPopup {
-		border-radius: 5vh;
+		border-radius: 2.5vh;
 	}
 	
 	#toolsContainer {

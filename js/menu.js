@@ -69,8 +69,8 @@ function expandMenu() {
 			if(window.innerWidth < window.innerHeight) {
 				menu.style.width = "fit-content";
 				menu.style.height = "fit-content";
-				button.style.width = "15vh";
-				button.style.height = "15vh";
+				button.style.width = "10vh";
+				button.style.height = "10vh";
 			}
 		}, duration);
 	}
@@ -146,8 +146,8 @@ function collapseMenu() {
 			if(window.innerWidth < window.innerHeight) {
 				menu.style.width = "fit-content";
 				menu.style.height = "fit-content";
-				button.style.width = "15vh";
-				button.style.height = "15vh";
+				button.style.width = "10vh";
+				button.style.height = "10vh";
 			}
 		}, duration);
 	}
@@ -164,10 +164,10 @@ function resizeMenuAndButton(e) {
 	if(e.matches) {
 		menu.style.width = "fit-content";
 		menu.style.height = "fit-content";
-		button.style.width = "15vh";
-		button.style.height = "15vh";
-		plus.style.fontSize = "15vh";
-		button.style.borderRadius = "5vh";
+		button.style.width = "10vh";
+		button.style.height = "10vh";
+		plus.style.fontSize = "10vh";
+		button.style.borderRadius = "2.5vh";
 	} else {
 		button.style.width = "75px";
 		button.style.height = "75px";
