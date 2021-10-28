@@ -56,51 +56,6 @@ a:hover {
 	color: #85d3dc;
 }
 
-#formContainer {
-	width:100%;
-	max-width:750px;
-}
-
-.contactInput {
-	margin-top:-20px;
-	padding:10px;
-	background-color:white;
-	border:2px solid #323232;
-}
-
-#user_message {
-	min-height: 250px;
-	width:100%;
-}
-
-#submitContactButton {
-	height:50px;
-	width:100%;
-	background-color:white;
-	border:2px solid #323232;
-	cursor:pointer;
-}
-
-#submitContactButton:hover {
-	background-color: #323232;
-	color:white;
-	border:2px solid white;
-}
-
-#contact_form {
-	display:flex;
-	flex-direction:column;
-}
-
-.requiredEmphasis {
-	color:#d55b71;
-}
-
-.errorMessage {
-	color: #d55b71;
-	font-size:0.8em;
-}
-
 #navButton {
 	position:fixed;
 	right:25px;
@@ -160,6 +115,7 @@ a:hover {
 #title {
 	text-decoration:none;
 	color: #fffff7;
+	user-select:none;
 }
 
 #title:hover {
@@ -168,6 +124,7 @@ a:hover {
 
 .navPopupItem {
 	padding:10px;
+	user-select:none;
 }
 
 #clickChecker {
@@ -224,6 +181,7 @@ li:before {
 
 .footerContent {
 	margin-left:20px;
+	user-select:none;
 }
 
 .footerContent:first-child {
@@ -281,8 +239,8 @@ li:before {
 	}
 	
 	#content {
-		margin-left:10px;
-		margin-right:10px;
+		margin-left:3vw;
+		margin-right:3vw;
 	}
 	
 	#footer {
@@ -294,7 +252,9 @@ li:before {
 	#navButton {
 		width:10vh;
 		height: 10vh;
-		border-radius: 2.5vh;
+		border-radius: 3.33vh;
+		right: 25px;
+		bottom:25px;
 	}
 	
 	#navButtonPlus {
@@ -302,7 +262,7 @@ li:before {
 	}
 	
 	#navPopup {
-		border-radius: 2.5vh;
+		border-radius: 3.33vh;
 	}
 	
 	.sectionContainer {
@@ -324,6 +284,7 @@ li:before {
 	
 	.navPopupItem {
 		font-size:4vh;
+		padding: 2vh;
 	}
 	
 	.projectSection {
