@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Set the charset -->
+		<meta charset="UTF-8">
+		
+		<!-- Set page title -->
+		<title>Projects - Justin Hamilton</title>
+		
+		<!-- Link the CSS to the page -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<!-- Link the JavaScript to the page -->
+		<script src="js/menu.js"></script>
+	</head>
+	
+	<body>
+		
+		<!-- Inline navigation menu -->
+		<div id="navPopup">
+				<div id="prevNextContainer">
+					<a href="https://desdaile.github.io/"  class="navPopupItem webringNav">←</a>
+					<a href="https://noahhodgson.github.io/474GithubPage/" class="navPopupItem webringNav">→</a>
+				</div>
+				<a href="/" class="navPopupItem">Home</a>
+				<a href="/" class="navPopupItem">Projects</a>
+				<a href="/assets/JustinHamiltonResume.pdf" class="navPopupItem">Resume</a>
+				<a href="https://mattm401.github.io/" class="navPopupItem">Class Website</a>
+				<a class="navPopupItem" id="closeMenuButton" onclick="collapseMenu()">Close</a>
+		</div>
+		
+		<div id="navButton" onclick="expandMenu()">
+			<p id="navButtonPlus">+</p>
+		</div>
+		
+		<div id="clickChecker" onclick="if(expanded){collapseMenu()}"></div>
+		
+		<!-- Header with name, image, navigation -->
+		<div id="header">
+			<div id="topContent">
+				<!-- my profile -->
+				<img id="profile" alt="A picture of me" src="images/profile.png">
+				
+				<!-- Containing the text content inline with the image -->
+				<div id="textContent">
+					<!-- My Name / Opening h1 -->
+					<h1><a href="/" id="title">Justin Hamilton</a></h1>
+					<!--
+						Justin Hamilton
+						CISC474-010
+						Personal Web Page 1
+						justinwh@udel.edu
+					-->
+				</div>
+			</div>
+		</div>
+		
+		<!-- Houses the text body of the page -->
+		<div id="content">
+			<p>Here are some projects I've worked on. For the full list, look at my <a href="https://www.jwhamilton.co">personal site</a>.</p>
+			<div class="projectSection">
+				<a href="https://www.jwhamilton.co/affirmations"><img src="/images/affirmations.png" class="appIcon"></a></a>
+				<div class="textContent">
+					<p class="projectTitle"><b>Affirmations - Care Reminders</b></p>
+					<p class="projectLink"><a href="https://www.jwhamilton.co/affirmations">jwhamilton.co/affirmations</a></p>
+					<p class="projectDescription">A self-care app that delivers compliments and positive reminders in a number of different ways.</p>
+				</div>
+			</div>
+			<div class="projectSection">
+				<a href="https://www.femtoeditor.com"><img src="/images/femto.png" class="appIcon"></a>
+				<div class="textContent">
+				<p class="projectTitle"><b>Femto Editor</b></p>
+				<p class="projectLink"><a href="https://www.femtoeditor.com">femtoeditor.com</a></p>
+				<p class="projectDescription">A lightweight plaintext and Markdown editor for iOS and iPadOS.</p>
+				</div>
+			</div>
+			<div class="projectSection">
+				<a href="https://www.dotmusicplayer.com"><img src="/images/dot.png" class="appIcon"></a>
+				<div class="textContent">
+				<p class="projectTitle"><b>Dot Music Player</b></p>
+				<p class="projectLink"><a href="https://www.dotmusicplayer.com">dotmusicplayer.com</a></p>
+				<p class="projectDescription">An Apple Music client for iOS and iPadOS.</p>
+				</div>
+			</div>
+			<div class="projectSection">
+				<a href="https://www.github.com/jwhamilton99/menu-bar-splitter"><img src="/images/mbs.png" class="appIcon"></a>
+				<div class="textContent">
+				<p class="projectTitle"><b>Menu Bar Splitter</b></p>
+				<p class="projectLink"><a href="https://www.github.com/jwhamilton99/menu-bar-splitter">github.com/jwhamilton99/menu-bar-splitter</a></p>
+				<p class="projectDescription">A macOS utility that adds dividers to your menu bar.</p>
+				</div>
+			</div>
+			<div class="projectSection">
+				<a href="https://www.github.com/jwhamilton99/dark-mode-wallpaper"><img src="/images/dmws.png" class="appIcon"></a>
+				<div class="textContent">
+				<p class="projectTitle"><b>Dark Mode Wallpaper Switcher</b></p>
+				<p class="projectLink"><a href="https://www.github.com/jwhamilton99/dark-mode-wallpaper">github.com/jwhamilton99/dark-mode-wallpaper</a></p>
+				<p class="projectDescription">A macOS utility that changes your wallpaper to match your system appearance.</p>
+				</div>
+			</div>
+			<div class="projectSection">
+				<a href="https://github.com/nnapior/redcap-sheets"><img src="/images/redcap.png" class="appIcon"></a>
+				<div class="textContent">
+				<p class="projectTitle"><b>REDCap To Google Sheets</b></p>
+				<p class="projectLink"><a href="https://github.com/nnapior/redcap-sheets">github.com/nnapior/redcap-sheets</a></p>
+				<p class="projectDescription">My senior design project - an interface for transferring REDCap data to and from Google Sheets.</p>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<p class="footerContent"><a href="mailto:justinwh@udel.edu">Email</a></p>
+			<p class="footerContent"><a href="https://www.twitter.com/jwhamilton_">Twitter</a></p>
+			<p class="footerContent"><a href="https://www.github.com/jwhamilton99">GitHub</a></p>
+			<p class="footerContent"><a href="https://www.linkedin.com/in/justin-hamilton-7616211b2/">LinkedIn</a></p>
+		</div>
+	</body>
+</html>

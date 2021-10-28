@@ -11,10 +11,30 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		
 		<!-- Link the JavaScript to the page -->
-		
+		<script src="js/menu.js"></script>
 	</head>
 	
 	<body>
+		
+		<!-- Inline navigation menu -->
+		<div id="navPopup">
+				<div id="prevNextContainer">
+					<a href="https://desdaile.github.io/"  class="navPopupItem webringNav">←</a>
+					<a href="https://noahhodgson.github.io/474GithubPage/" class="navPopupItem webringNav">→</a>
+				</div>
+				<a href="/" class="navPopupItem">Home</a>
+				<a href="/projects" class="navPopupItem">Projects</a>
+				<a href="/assets/JustinHamiltonResume.pdf" class="navPopupItem">Resume</a>
+				<a href="https://mattm401.github.io/" class="navPopupItem">Class Website</a>
+				<a class="navPopupItem" id="closeMenuButton" onclick="collapseMenu()">Close</a>
+		</div>
+		
+		<div id="navButton" onclick="expandMenu()">
+			<p id="navButtonPlus">+</p>
+		</div>
+		
+		<div id="clickChecker" onclick="if(expanded){collapseMenu()}"></div>
+		
 		<!-- Header with name, image, navigation -->
 		<div id="header">
 			<div id="topContent">
@@ -24,7 +44,7 @@
 				<!-- Containing the text content inline with the image -->
 				<div id="textContent">
 					<!-- My Name / Opening h1 -->
-					<h1>Justin Hamilton</h1>
+					<h1><a href="/" id="title">Justin Hamilton</a></h1>
 					<!--
 						Justin Hamilton
 						CISC474-010
@@ -33,35 +53,69 @@
 					-->
 				</div>
 			</div>
-			<!-- Inline navigation menu -->
-			<p id="navigation">
-				<a href="https://desdaile.github.io/">Previous</a> / 
-				Home / 
-				<a href="/aboutme.html">About Me</a> / 
-				<a href="https://mattm401.github.io/">Class Website</a> / 
-				<a href="/contact.html">Contact</a> / 
-				<a href="https://noahhodgson.github.io/474GithubPage/">Next</a></p>
 		</div>
 		
 		<!-- Houses the text body of the page -->
 		<div id="content">
 			
 			<!-- Intro paragraph -->
-			<h2>Hi there!</h2>
-			<p>This is a portfolio site that I'll be working on over the Fall 2021 semester for my CISC474 (Advanced Web Technologies) course.</p>
-			<p>Here are a few things that interest me about web development:</p>
-			
-			<!-- List of web development interests -->
+			<h2>👋 Hi there!</h2>
+			<p>I'm Justin Hamilton, a fourth-year student at the University of Delaware. Pleased to meet you.</p>
+			<p>I'm graduating in December 2021, with a Bachelor of Science in Computer Science and a concentration in Data Science.</p>
+			<p>After I graduate, I'd like to go into work as a software developer. I have experience with both front-end and back-end development, and I feel like I have a good sense of UI design.</p>
+			<p>I have experience with the following tools:</p>
+			<div id="toolsContainer">
+				<div class="section">
+					<p><b>Operating Systems</b></p>
+					<ul>
+						<li>macOS</li>
+						<li>Windows</li>
+						<li>Linux/Unix</li>
+					</ul>
+				</div>
+				<div class="section">
+					<p><b>Programming Languages</b></p>
+					<ul>
+						<li>HTML/CSS/JavaScript</li>
+						<li>C/C++</li>
+						<li>Java</li>
+						<li>Python</li>
+						<li>Swift</li>
+						<li>SQL</li>
+						<li>Lisp</li>
+					</ul>
+				</div>
+				<div class="section">
+					<p><b>Applications</b></p>
+					<ul>
+						<li>Eclipse IDE</li>
+						<li>Adobe Photoshop</li>
+						<li>Apple Xcode</li>
+						<li>Microsoft Office Suite</li>
+						<li>Google App Suite</li>
+						<li>Oracle SQL Developer</li>
+					</ul>
+				</div>
+			</div>
+			<p>And I have taken the following classes:</p>
 			<ul>
-				<li>Creating my own corner of the Internet that I have complete control over.</li>
-				<li>Styling everything to suit my tastes.</li>
-				<li>Creating experiences that I can share with my friends.</li>
-				<li>Making tools that help people around the world.</li>
-				<li>Being able to interface with APIs and manipulate data.</li>
+				<li>Software Engineering</li>
+				<li>Data Structures</li>
+				<li>Operating Systems</li>
+				<li>Algorithms</li>
+				<li>Data Mining</li>
+				<li>Parallel Computing</li>
+				<li>Database Systems</li>
+				<li>Artificial Intelligence</li>
+				<li>Advanced Web Applications</li>
 			</ul>
-			
-			<p>Pleased to meet you.</p>
-			
+			<p>If you'd like to see the projects I've worked on, you can do so <a href="/projects">here</a>.</p>
+		</div>
+		<div id="footer">
+			<p class="footerContent"><a href="mailto:justinwh@udel.edu">Email</a></p>
+			<p class="footerContent"><a href="https://www.twitter.com/jwhamilton_">Twitter</a></p>
+			<p class="footerContent"><a href="https://www.github.com/jwhamilton99">GitHub</a></p>
+			<p class="footerContent"><a href="https://www.linkedin.com/in/justin-hamilton-7616211b2/">LinkedIn</a></p>
 		</div>
 	</body>
 </html>

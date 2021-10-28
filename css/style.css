@@ -7,7 +7,7 @@ body {
 	
 }
 
-#header {
+#header, #footer {
 	background-color:#323232;
 	color: #fffff7;
 	padding:10px;
@@ -97,14 +97,155 @@ a:hover {
 	font-size:0.8em;
 }
 
+#navButton {
+	position:fixed;
+	right:25px;
+	bottom:25px;
+	width:75px;
+	height:75px;
+	background-color:#323232;
+	color:#fffff7;
+	border-radius:25px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	cursor:pointer;
+	box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.50);
+	z-index:10;
+}
+
+#navButtonPlus {
+	font-size:75px;
+	user-select:none;
+}
+
+#prevNextContainer {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+}
+
+.webringNav {
+	text-decoration:none;
+	font-size:30px;
+}
+
+#navPopup {
+	position:fixed;
+	right:25px;
+	bottom:25px;
+	background-color: #fffff7;
+	padding:10px;
+	display:none;
+	flex-direction:column;
+	color: #323232;
+	box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.50);
+	border-radius:25px;
+	text-align:right;
+	overflow:hidden;
+	white-space:nowrap;
+	opacity:0;
+	z-index:11;
+}
+
+#title {
+	text-decoration:none;
+	color: #fffff7;
+}
+
+#title:hover {
+	color:#d55b71;
+}
+
+.navPopupItem {
+	padding:10px;
+}
+
+#clickChecker {
+	background-color:black;
+	position:fixed;
+	bottom:0;
+	top:0;
+	right:0;
+	left:0;
+	z-index:1;
+	opacity:0;
+	display:none;
+}
+
+#closeMenuButton {
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+ul {
+	margin-top:-20px;
+	padding:10px;
+}
+
+li {
+	list-style-type:none;
+}
+
+li:before {
+	content:"- "
+}
+
+#toolsContainer {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	text-align:left;
+}
+
+.projectLink, .projectDescription {
+	margin-top:-10px;
+}
+
+.projectSection {
+	margin-bottom:30px;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+}
+
+#footer {
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}
+
+.footerContent {
+	margin-left:20px;
+}
+
+.footerContent:first-child {
+	margin-left:0;
+}
+
+.appIcon {
+	width:100px;
+	height:100px;
+	border-radius:25px;
+	margin-right:20px;
+}
+
 @media (prefers-color-scheme: dark) {
 	body {
 		background-color:#323232;
 		color: #fffff7;
 	}
 	
-	#header {
+	#header, #footer {
 		background-color: #fffff7;
+		color: #323232;
+	}
+	
+	#navButton {
+		background-color: #fffff7;
+		color: #323232;	
+	}
+	#title {
 		color: #323232;
 	}
 }
