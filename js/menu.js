@@ -1,5 +1,5 @@
 var menuAnimationInProgress = false
-var duration = 300;
+var duration = 250;
 var expanded = false;
 
 function expandMenu() {

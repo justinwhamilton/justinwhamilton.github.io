@@ -200,7 +200,7 @@ li:before {
 	content:"- "
 }
 
-#toolsContainer {
+.sectionContainer {
 	display:flex;
 	flex-direction:row;
 	justify-content:space-between;
@@ -217,6 +217,11 @@ li:before {
 	flex-direction:row;
 	align-items:center;
 }
+
+.textContent {
+	text-align:left;
+}
+
 .footerContent {
 	margin-left:20px;
 }
@@ -254,16 +259,24 @@ li:before {
 
 @media screen and (orientation:portrait) {
 	body {
-		font-size:4vw;
+		font-size:6vw;
 	}
 	
 	#content {
 		max-width:none;
 	}
 	
+	#textContent {
+		margin-top:-5vw;
+	}
+	
+	#topContent {
+		flex-direction:column;
+	}
+	
 	#profile {
-		width: 20vw;
-		height: 20vw;
+		width: 30vw;
+		height: 30vw;
 		margin:10px;
 	}
 	
@@ -292,7 +305,7 @@ li:before {
 		border-radius: 2.5vh;
 	}
 	
-	#toolsContainer {
+	.sectionContainer {
 		flex-direction:column;
 		justify-content:center;
 		align-items:center;
@@ -310,7 +323,22 @@ li:before {
 	}
 	
 	.navPopupItem {
-		padding:3vh;
 		font-size:4vh;
+	}
+	
+	.projectSection {
+		flex-direction:column;
+	}
+	
+	.textContent {
+		text-align:center;
+	}
+	
+	.appIcon {
+		width:30vw;
+		height:30vw;
+		border-radius:7.5vw;
+		margin-right:0px;
+		box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.50);
 	}
 }
