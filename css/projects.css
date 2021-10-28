@@ -18,6 +18,7 @@
 	height:100px;
 	border-radius:25px;
 	margin-right:20px;
+	box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.50);
 }
 
 @media screen and (orientation:portrait) {
@@ -34,6 +35,5 @@
 		height:30vw;
 		border-radius:7.5vw;
 		margin-right:0px;
-		box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.50);
 	}
 }
