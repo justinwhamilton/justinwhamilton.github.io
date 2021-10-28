@@ -9,6 +9,8 @@
 		
 		<!-- Link the CSS to the page -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/menu.css">
+		<link rel="stylesheet" type="text/css" href="css/headerFooter.css">
 		
 		<!-- Link the JavaScript to the page -->
 		<script src="js/menu.js"></script>
@@ -16,12 +18,14 @@
 	
 	<body>
 		
-		<!-- Inline navigation menu -->
+		<!-- Popup navigation menu -->
 		<div id="navPopup">
+				<!-- Inline previous/next links -->
 				<div id="prevNextContainer">
 					<a href="https://desdaile.github.io/"  class="navPopupItem webringNav">←</a>
 					<a href="https://noahhodgson.github.io/474GithubPage/" class="navPopupItem webringNav">→</a>
 				</div>
+				<!-- Other navigation options -->
 				<a href="/" class="navPopupItem">Home</a>
 				<a href="/projects" class="navPopupItem">Projects</a>
 				<a href="/assets/JustinHamiltonResume.pdf" class="navPopupItem">Resume</a>
@@ -29,13 +33,15 @@
 				<a class="navPopupItem" id="closeMenuButton" onclick="collapseMenu()">Close</a>
 		</div>
 		
+		<!-- Floating navigation menu -->
 		<div id="navButton" onclick="expandMenu()">
 			<p id="navButtonPlus">+</p>
 		</div>
 		
+		<!-- Dims the background when menu is expanded, and collapses when clicked -->
 		<div id="clickChecker" onclick="if(expanded){collapseMenu()}"></div>
 		
-		<!-- Header with name, image, navigation -->
+		<!-- Header with name and image -->
 		<div id="header">
 			<div id="topContent">
 				<!-- my profile -->
@@ -63,6 +69,8 @@
 			<p>I'm Justin Hamilton, a fourth-year student at the University of Delaware. Pleased to meet you.</p>
 			<p>I'm graduating in December 2021, with a Bachelor of Science in Computer Science and a concentration in Data Science.</p>
 			<p>After I graduate, I'd like to go into work as a software developer. I have experience with both front-end and back-end development, and I feel like I have a good sense of UI design.</p>
+			
+			<!-- List of experience -->
 			<p>I have experience with the following tools:</p>
 			<div class="sectionContainer">
 				<div class="section">
@@ -113,8 +121,12 @@
 					</ul>
 				</div>
 			</div>
+			
+			<!-- Link to projects -->
 			<p>If you'd like to see the projects I've worked on, you can do so <a href="/projects">here</a>.</p>
 		</div>
+		
+		<!-- Footer with links to social media and email -->
 		<div id="footer">
 			<p class="footerContent"><a href="mailto:justinwh@udel.edu">Email</a></p>
 			<p class="footerContent"><a href="https://www.twitter.com/jwhamilton_">Twitter</a></p>

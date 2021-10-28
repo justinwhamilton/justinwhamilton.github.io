@@ -8,7 +8,10 @@
 		<title>Projects - Justin Hamilton</title>
 		
 		<!-- Link the CSS to the page -->
-		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/menu.css">
+		<link rel="stylesheet" type="text/css" href="css/headerFooter.css">
+		<link rel="stylesheet" type="text/css" href="css/projects.css">
 		
 		<!-- Link the JavaScript to the page -->
 		<script src="/js/menu.js"></script>
@@ -16,26 +19,30 @@
 	
 	<body>
 		
-		<!-- Inline navigation menu -->
+		<!-- Popup navigation menu -->
 		<div id="navPopup">
+				<!-- Inline previous/next links -->
 				<div id="prevNextContainer">
 					<a href="https://desdaile.github.io/"  class="navPopupItem webringNav">←</a>
 					<a href="https://noahhodgson.github.io/474GithubPage/" class="navPopupItem webringNav">→</a>
 				</div>
+				<!-- Other navigation options -->
 				<a href="/" class="navPopupItem">Home</a>
-				<a href="/" class="navPopupItem">Projects</a>
+				<a href="/projects" class="navPopupItem">Projects</a>
 				<a href="/assets/JustinHamiltonResume.pdf" class="navPopupItem">Resume</a>
 				<a href="https://mattm401.github.io/" class="navPopupItem">Class Website</a>
 				<a class="navPopupItem" id="closeMenuButton" onclick="collapseMenu()">Close</a>
 		</div>
 		
+		<!-- Floating navigation menu -->
 		<div id="navButton" onclick="expandMenu()">
 			<p id="navButtonPlus">+</p>
 		</div>
 		
+		<!-- Dims the background when menu is expanded, and collapses when clicked -->
 		<div id="clickChecker" onclick="if(expanded){collapseMenu()}"></div>
 		
-		<!-- Header with name, image, navigation -->
+		<!-- Header with name and image -->
 		<div id="header">
 			<div id="topContent">
 				<!-- my profile -->
@@ -57,9 +64,17 @@
 		
 		<!-- Houses the text body of the page -->
 		<div id="content">
+			
+			<!-- Intro text -->
 			<p>Here are some projects I've worked on. For the full list, look at my <a href="https://www.jwhamilton.co">personal site</a>.</p>
+			
+			<!-- List of projects -->
 			<div class="projectSection">
+				
+				<!-- Icon for project -->
 				<a href="https://www.jwhamilton.co/affirmations"><img src="/images/affirmations.png" class="appIcon" alt="Affirmations App Icon"></a>
+				
+				<!-- Title, link, and description of project -->
 				<div class="textContent">
 					<p class="projectTitle"><b>Affirmations - Care Reminders</b></p>
 					<p class="projectLink"><a href="https://www.jwhamilton.co/affirmations">jwhamilton.co/affirmations</a></p>
@@ -107,6 +122,8 @@
 				</div>
 			</div>
 		</div>
+		
+		<!-- Footer with links to social media and email -->
 		<div id="footer">
 			<p class="footerContent"><a href="mailto:justinwh@udel.edu">Email</a></p>
 			<p class="footerContent"><a href="https://www.twitter.com/jwhamilton_">Twitter</a></p>

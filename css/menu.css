@@ -1,28 +1,5 @@
-body {
-	margin:0;
-	font-family:"Arial", sans-serif;
-	font-size:1.3em;
-	background-color: #fffff7;
-	color: #323232;
-	
-}
-
-#content {
-	margin:auto;
-	max-width:750px;
-	padding:10px;
-}
-
 #studentNavigation {
 	text-align:center;
-}
-
-a {
-	color: #d55b71;
-}
-
-a:hover {
-	color: #85d3dc;
 }
 
 #navButton {
@@ -103,32 +80,7 @@ a:hover {
 	cursor:pointer;
 }
 
-ul {
-	margin-top:-20px;
-	padding:10px;
-}
-
-li {
-	list-style-type:none;
-}
-
-li:before {
-	content:"- "
-}
-
-.sectionContainer {
-	display:flex;
-	flex-direction:row;
-	justify-content:space-between;
-	text-align:left;
-}
-
 @media (prefers-color-scheme: dark) {
-	body {
-		background-color:#323232;
-		color: #fffff7;
-	}
-	
 	#navButton {
 		background-color: #fffff7;
 		color: #323232;	
@@ -136,17 +88,6 @@ li:before {
 }
 
 @media screen and (orientation:portrait) {
-	body {
-		font-size:6vw;
-	}
-	
-	#content {
-		max-width:none;
-		margin-left:3vw;
-		margin-right:3vw;
-	}
-	
-	
 	#navButton {
 		width:10vh;
 		height: 10vh;
@@ -161,17 +102,6 @@ li:before {
 	
 	#navPopup {
 		border-radius: 3.33vh;
-	}
-	
-	.sectionContainer {
-		flex-direction:column;
-		justify-content:center;
-		align-items:center;
-	}
-	
-	.section {
-		width:50vw;
-		
 	}
 	
 	.navPopupItem {
